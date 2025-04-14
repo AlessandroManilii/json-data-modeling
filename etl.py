@@ -117,8 +117,5 @@ if __name__ == "__main__":
     # order events list based on timestamp
     events_sorted = sorted(formatted_events, key=lambda x: x['datetime'])
 
-    for e in events_sorted:
-        if e['action']=='CREATE' and e['data_type']=='merchants':
-            print(e)
     # route event to sql
     route_events_to_sql(formatted_events, connection)
