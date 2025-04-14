@@ -1,0 +1,8 @@
+# input files
+input.json
+
+# db dump 
+events.db
+
+#pycahe files
+*.pyc
